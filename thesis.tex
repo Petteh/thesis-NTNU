@@ -1,10 +1,12 @@
-\documentclass[british,titlepage]{ntnuthesis}
+\documentclass[american,titlepage,oneside]{ntnuthesis}
+%\documentclass[american,titlepage]{ntnuthesis}
 
 \title{An NTNU Thesis \LaTeX{} Document Class}
 \shorttitle{An NTNU Thesis Document Class}
-\author{Community of Practice in Computer Science Education at NTNU}
+\author{Petter Husmo Wiik}
 \shortauthor{CoPCSE$@$NTNU}
-\date{CC-BY \ntnuthesisdate}
+\date{\today}
+%\date{\ntnuthesisdate}
 
 \addbibresource{thesis.bib}
 
@@ -24,16 +26,21 @@
 \printglossary                    % Print glossary
 
 \input{chapters/1-introduction}
-\input{chapters/2-usage.tex}
-\input{chapters/3-structure.tex}
-\input{chapters/4-conclusion.tex}
+\input{chapters/2-requirements}
+\input{chapters/3-technical_design}
+\input{chapters/4-development_process}
+\input{chapters/5-implementation}
+\input{chapters/6-deployment}
+\input{chapters/7-testing}
+\input{chapters/8-discussion}
+\input{chapters/9-conclusion}
 
 \chapter*{\bibname}
 \printbibliography[heading=none]
 
-\input{chapters/papers.tex}
+% \input{chapters/papers.tex}
 
-\appendix
-\input{appendices/a-appendix.tex}
+% \appendix
+% \input{appendices/a-appendix.tex}
 
 \end{document}
